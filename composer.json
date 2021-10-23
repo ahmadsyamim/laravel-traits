@@ -1,0 +1,50 @@
+{
+    "name": "ahmadsyamim/laravel-traits",
+    "description": "LaravelTraits is a package containing useful traits to use along your Controllers, Service Providers, Commands and what not. Take a look!",
+    "keywords": [
+        "ahmadsyamim",
+        "laravel-traits",
+        "laravel",
+        "helpers",
+        "traits",
+        "php"
+    ],
+    "homepage": "https://github.com/ahmadsyamim/laravel-traits",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Ahmad Syamim Suhairi",
+            "email": "ahmad.syamim@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.4||^8.0",
+        "ext-json": "*",
+        "illuminate/support": "^8.0",
+        "guzzlehttp/guzzle": "^7.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^6.19",
+        "phpunit/phpunit": "^9.5",
+        "mockery/mockery":"^1.4.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "AhmadSyamim\\LaravelTraits\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit --coverage-clover build/logs/clover.xml",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
